@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 25vw;
+            height: 25vh;
+            border: 3px solid grey;
+            overflow: hidden scroll;
+            /* overflow: auto; 
+            overflow-x: hidden;
+            overflow-y: scroll; */
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box made using the div element. It has a width of 30% of the viewport width and a height of 30% of the
+        viewport height. The overflow property is set to auto, which means that if the content exceeds the dimensions of
+        the box, scrollbars will appear to allow you to scroll through the content. You can also use overflow-x and
+        overflow-y to control the overflow behavior separately for horizontal and vertical directions. Additionally, you
+        can use white-space and text-overflow properties to control how text is displayed when it overflows its
+        container.
+    </div>
+</body>
+
+</html>
