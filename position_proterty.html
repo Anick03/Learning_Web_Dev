@@ -22,7 +22,7 @@
         .box1 {
             background-color: aqua;
 
-            /* Box stay in the normal flow of the document, and it is positioned according to the normal flow of the document. */
+            /* Box stay in it's original position, when we scroll it will move with the page but stay behind if there is an object infront of it */
 
             /* position: sticky;
             top:0px;
@@ -31,10 +31,10 @@
             margin: 0;
             padding: 0; */
 
-            /* Box stays in the normal flow of the document, and it is positioned according to the normal flow of the document. */
-            position: absolute;
+            /* Box will take the space it will require, it will stay behind if there is an object */
+            /* position: absolute;
             top: 50px;
-            left: 50px;
+            left: 50px; */
         }
 
         .box2 {
@@ -48,7 +48,7 @@
 
         .box3 {
             background-color: magenta;
-            /* Box stays in the fixed position of the document, and it is positioned according to the normal flow of the document. */
+           /* Box stay in it's original position, when we scroll it will move with the page but stay in front of any object if there is an object on the page */
             position: fixed;
             bottom: 0px;
             left:8vw;
