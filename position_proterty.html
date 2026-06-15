@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 500px;
+            width: 70vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: aqua;
+
+            /* Box stay in the normal flow of the document, and it is positioned according to the normal flow of the document. */
+
+            /* position: sticky;
+            top:0px;
+            height: 111px;
+            width:100%;
+            margin: 0;
+            padding: 0; */
+
+            /* Box stays in the normal flow of the document, and it is positioned according to the normal flow of the document. */
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .box2 {
+            background-color: grey;
+
+            /* Box stays in the normal flow of the document, and it is positioned according to the normal flow of the document. */
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        .box3 {
+            background-color: magenta;
+            /* Box stays in the fixed position of the document, and it is positioned according to the normal flow of the document. */
+            position: fixed;
+            bottom: 0px;
+            left:8vw;
+            height: 111px;
+        }
+
+        .box4 {
+            background-color: purple;
+        }
+
+      
+
+        .parent {
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid purple;
+            /* position: relative; */
+
+
+            /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"> This is Box with class "box box1" </div>
+        <div class="box box2"> This is Box with class "box box2" </div>
+        <div class="box box3"> This is Box with class "box box3" </div>
+        <div class="box box4"> This is Box with class "box box4" </div>
+    </div>
+</body>
+
+</html>
